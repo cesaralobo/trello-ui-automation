@@ -1,5 +1,5 @@
 # Trello Automation / UI and API  
-** Automation Framework to solve Trello Challenge  **
+Automation Framework to solve Trello Challenge
 
 ## Requirements
   
