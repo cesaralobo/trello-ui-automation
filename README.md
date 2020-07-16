@@ -57,5 +57,3 @@ $ mvn test -DheadlessM=y
 [Download video](https://github.com/cesaralobo/trello-ui-automation/blob/master/CHALHOUB_CASE.mp4)
 
 
-Developed by [Cesar Lobo](https://www.linkedin.com/in/cesar-lobo/)
-
