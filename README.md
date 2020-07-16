@@ -8,7 +8,6 @@ You will need Windows or Linux OS
 [Maven 3](https://maven.apache.org/download.cgi) 
 Chrome or Firefox Browser (last version)
 
- Clone project from [Gitlab](https://gitlab.com/)  
 ```  
 $ git clone https://gitlab.com/git_clobo/chalhoub-test.git  
 ```  
