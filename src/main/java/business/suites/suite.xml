@@ -1,0 +1,9 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regresion Editor ofertas 01" verbose="1" parallel="false">
+    <test name="Editores">
+        <classes>
+            <class name="business.tests.cases.CHALHOUB_CASE"></class>
+        </classes>
+    </test>
+</suite>
