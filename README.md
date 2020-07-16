@@ -1,4 +1,4 @@
-# QA Automation Engineer Challenge  
+# Trello UI Automation / UI and API  
 ** Automation Framework to solve Trello Challenge  **
 
 ## Requirements
