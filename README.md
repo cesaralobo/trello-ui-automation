@@ -9,7 +9,7 @@ You will need Windows or Linux OS
 Chrome or Firefox Browser (last version)
 
 ```  
-$ git clone https://gitlab.com/git_clobo/chalhoub-test.git  
+$ git clone git@github.com:cesaralobo/trello-ui-automation.git 
 ```  
 ### What is included?
 
