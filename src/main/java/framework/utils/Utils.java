@@ -66,7 +66,7 @@ public class Utils {
 
     Utils.waitForPageLoadComplete(driver);
 
-    int timeout = Constants.PAGELOAD_TIMEOUT;
+    int timeout = Constants.MEDIUM_TIMEOUT;
 
     if(timeoutArgs.length > 0){
       timeout =  timeoutArgs[0];

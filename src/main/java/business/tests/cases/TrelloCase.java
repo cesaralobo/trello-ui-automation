@@ -24,17 +24,17 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.greaterThan;
 
 
-public class CHALHOUB_CASE extends BaseTest {
+public class TrelloCase extends BaseTest {
 
-    private static final Logger logger = LogManager.getLogger(CHALHOUB_CASE.class);
-    private final String scenariesFile = System.getProperty("user.dir") + "/scenaries/DATA_CASES.json";
+    private static final Logger logger = LogManager.getLogger(TrelloCase.class);
+    private final String sceneriesFile = System.getProperty("user.dir") + "/sceneries/DATA_CASES.json";
 
-    @DataProvider(name = "data_scenaries")
+    @DataProvider(name = "data_sceneries")
     public Iterator<Object[]> escsArray() {
-        Object[][] escenarios;
-        escenarios = Utils.getEscenariosJson(scenariesFile);
-        Assert.assertNotNull(escenarios,"Fail Scenaries Data");
-        return Arrays.asList(escenarios).iterator();
+        Object[][] sceneries;
+        sceneries = Utils.getEscenariosJson(sceneriesFile);
+        Assert.assertNotNull(sceneries,"Fail Sceneries Data");
+        return Arrays.asList(sceneries).iterator();
     }
 
     public void dataResetBefore(Map data) throws Exception{
@@ -83,7 +83,7 @@ public class CHALHOUB_CASE extends BaseTest {
 
     }
 
-    @Test(dataProvider = "data_scenaries",priority = 1)
+    @Test(dataProvider = "data_sceneries",priority = 1)
     public void ui_challenge01(ITestContext context,Map data){
 
         WebDriver driver = ((WebDriver) context.getAttribute("driver"));
@@ -105,10 +105,10 @@ public class CHALHOUB_CASE extends BaseTest {
             trelloPage.signIn(data.get("USER").toString(),data.get("PASS").toString());
 
             //Validate User
-            Assert.assertTrue(trelloPage.validateScreen("user",data.get("FullName").toString()),"Trello User Not Autenticated");
-            Utils.logMsg(rep_logger,logger,Status.PASS,"Trello User Autenticated");
+            Assert.assertTrue(trelloPage.validateScreen("user",data.get("FullName").toString()),"Trello User Not Authenticated");
+            Utils.logMsg(rep_logger,logger,Status.PASS,"Trello User Authenticated");
 
-            //Go Wellcome Board
+            //Go Welcome Board
             trelloPage.goBoard("welcome");
             Assert.assertTrue(trelloPage.validateScreen("board","Welcome To Trello"),"Trello Board Not Loaded");
             Utils.logMsg(rep_logger,logger,Status.PASS,"Trello Board Loaded");
@@ -128,7 +128,7 @@ public class CHALHOUB_CASE extends BaseTest {
             Assert.fail("DOMException: "+e.getMessage());
         }catch (NoSuchElementException e) {
             rep_logger.log(Status.FAIL,"NoSuchElementException: "+e.getMessage());
-            Assert.fail("No se encontro Elemento: "+e.getMessage());
+            Assert.fail("Element not found: "+e.getMessage());
         }catch (Exception e) {
             rep_logger.log(Status.FAIL,"Exception: "+e.getMessage());
             Assert.fail("Exception: "+e.getMessage());
@@ -138,7 +138,7 @@ public class CHALHOUB_CASE extends BaseTest {
 
     }
 
-    @Test(dataProvider = "data_scenaries",priority = 2)
+    @Test(dataProvider = "data_sceneries",priority = 2)
     public void api_challenge02(ITestContext context,Map data){
 
 

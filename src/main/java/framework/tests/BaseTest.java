@@ -73,10 +73,10 @@ public class BaseTest {
 
                     if(System.getProperty("os.name").toLowerCase().contains("win")){
                         logger.info("Firefox Driver on Windows");
-                        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/driver/win/firefox25/geckodriver.exe");
+                        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/driver/win/firefox/geckodriver.exe");
                     }else{
                         logger.info("Firefox Driver on Linux");
-                        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/driver/linux/firefox25/geckodriver");
+                        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/driver/linux/firefox/geckodriver");
                     }
                     ff_options = new FirefoxOptions();
 
@@ -94,10 +94,10 @@ public class BaseTest {
 
                     if(System.getProperty("os.name").toLowerCase().contains("win")){
                         logger.info("Chrome Driver on Windows");
-                        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "/driver/win/chrome77/chromedriver.exe");
+                        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "/driver/win/chrome/chromedriver.exe");
                     }else{
                         logger.info("Chrome Driver on Linux");
-                        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/driver/linux/chrome77/chromedriver");
+                        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/driver/linux/chrome/chromedriver");
                     }
 
                     chOptions = new ChromeOptions();

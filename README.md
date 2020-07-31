@@ -4,9 +4,9 @@ Automation Framework to solve Trello Challenge
 ## Requirements
   
 You will need Windows or Linux OS
-[Open JDK 12](https://jdk.java.net/12/)
+[Open JDK 8](https://jdk.java.net/8/)
 [Maven 3](https://maven.apache.org/download.cgi) 
-Chrome or Firefox Browser (last version)
+Chrome Browser (last version)
 
 ```  
 $ git clone git@github.com:cesaralobo/trello-ui-automation.git 

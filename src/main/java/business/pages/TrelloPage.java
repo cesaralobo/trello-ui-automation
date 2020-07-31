@@ -14,7 +14,7 @@ public class TrelloPage extends BasePage {
   private static final String trello_login_button = "#login";
   private static final String trello_body_screen_att = "body[data-analytics-screen]";
   private static final String trello_home_screen = "a[href*=\"login\"]";
-  private static final String trello_login_screen = "#login-form label[for=\"user\"]";
+  private static final String trello_login_screen = ".account-form h1";
   private static final String user_page_logout_button = "button[data-test-id='header-member-menu-button']";
   private static final String user_page_wellcome_board_link = "//*[contains(@class,\"mod-no-sidebar\")][contains(.,\"Personal Boards\")]//a[contains(@class,\"board-tile\")][contains(@href,\"welcome-to-trello\")]";
   private static final String user_page_wellcome_board = ".mod-board-name .board-header-btn-text";
@@ -96,7 +96,7 @@ public class TrelloPage extends BasePage {
     Utils.waitUntilElementClickable(driver,this.menu_login_item).click();
     Utils.wait(Constants.USER_TIMEOUT);
 
-    if(this.validateScreen("login","Email")){
+    if(this.validateScreen("login","Log in to Trello")){
 
       WebElement email_input = Utils.waitUntilLoadElement(driver, this.trello_email_input);
       email_input.sendKeys(user);
