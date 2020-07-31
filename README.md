@@ -25,21 +25,12 @@ Independent data file can be configured with new users (Json objects) by adding 
   "Cases": [
     {
       "caseID": "CHALLENGE",
-      "USER": "automation.tae@gmail.com",
-      "PASS": "TrellAuto",
+      "USER": "your_account@gmail.com",
+      "PASS": "pass",
       "FullName": "Cesar",
       "BASE_URI": "https://api.trello.com/1/",
-      "KEY": "ac5eb725096fb0af97e78327e727cee8",
-      "TOKEN": "b1d5279fae96a36eb72e0210f379c553dcaabf24dc2853d45368565de35afb54"
-    },
-    {
-      "caseID": "CHALLENGE_2",
-      "USER": "other_user@gmail.com",
-      "PASS": "otherPass",
-      "FullName": "Other",
-      "BASE_URI": "https://api.trello.com/1/",
-      "KEY": "ac5eb725096fb0af97e78327e727cee8",
-      "TOKEN": "b1d5279fae96a36eb72e0210f379c553dcaabf24dc2853d45368565de35afb54"
+      "KEY": "",
+      "TOKEN": ""
     }
   ]
 }
