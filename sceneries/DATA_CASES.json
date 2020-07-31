@@ -2,12 +2,12 @@
   "Cases": [
     {
       "caseID": "CHALLENGE",
-      "USER": "automation.tae@gmail.com",
-      "PASS": "TrellAuto",
-      "FullName": "Cesar",
+      "USER": "[Trello User]",
+      "PASS": "[Trello Password]",
+      "FullName": "Cesar Lobo",
       "BASE_URI": "https://api.trello.com/1/",
-      "KEY": "ac5eb725096fb0af97e78327e727cee8",
-      "TOKEN": "b1d5279fae96a36eb72e0210f379c553dcaabf24dc2853d45368565de35afb54"
+      "KEY": "[Your trello key]",
+      "TOKEN": "[Your trello token]"
     }
   ]
 }
